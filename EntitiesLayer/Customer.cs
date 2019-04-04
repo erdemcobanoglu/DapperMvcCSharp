@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer
 {
-    // DESKTOP-INVSUP5\SQLEXPRESS => TestPersonalAccountDemo
+    
     public class Customer  : IDbModel
     {
        public int Id { get; set; }
