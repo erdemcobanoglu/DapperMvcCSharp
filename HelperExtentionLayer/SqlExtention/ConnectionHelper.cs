@@ -15,7 +15,7 @@ namespace HelperExtentionLayer
 
         public static ConnectionHelper Instance => Lazy.Value;
 
-        SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-INVSUP5\SQLEXPRESS; initial Catalog=TestPersonalAccountDemo;Integrated Security = True;");
+        SqlConnection sqlCon = new SqlConnection(@"Data Source= ; initial Catalog= ;Integrated Security = True;");
 
         private ConnectionHelper()
         {
