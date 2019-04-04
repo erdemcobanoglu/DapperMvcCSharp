@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05_Helper", "05_Helper", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperExtentionLayer", "HelperExtentionLayer\HelperExtentionLayer.csproj", "{FDFE50A5-4157-4668-8A16-810AB447FA76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterfaceMVC", "UserInterfaceMVC\UserInterfaceMVC.csproj", "{147FB1A7-E741-4550-9CB3-F57816747B5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{FDFE50A5-4157-4668-8A16-810AB447FA76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDFE50A5-4157-4668-8A16-810AB447FA76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDFE50A5-4157-4668-8A16-810AB447FA76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147FB1A7-E741-4550-9CB3-F57816747B5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147FB1A7-E741-4550-9CB3-F57816747B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147FB1A7-E741-4550-9CB3-F57816747B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147FB1A7-E741-4550-9CB3-F57816747B5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{53A748A9-C5FE-4335-9B5F-D371BB7E2997} = {CB2A438E-9F10-4723-8270-1F0682D73C01}
 		{D886C563-A318-4210-BB37-13519F2BF2E1} = {05B8DF9A-D51A-4F1A-8BCF-054EB689721F}
 		{FDFE50A5-4157-4668-8A16-810AB447FA76} = {86925259-CC30-4055-B19C-29A9200AF291}
+		{147FB1A7-E741-4550-9CB3-F57816747B5F} = {EB00E694-A6B5-4BEB-B1F5-0D86F09FCDAB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C742F46D-BE4B-4463-9015-B4EE742856C2}

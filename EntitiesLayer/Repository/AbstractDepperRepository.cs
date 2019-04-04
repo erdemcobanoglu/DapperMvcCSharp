@@ -10,6 +10,10 @@ using Dapper;
 
 namespace EntitiesLayer.Repository
 {
+    /// <summary>
+    /// addd =>   System.Configuration.ConfigurationManager
+    /// add => Dapper
+    /// </summary>
     public abstract class AbstractDepperRepository : IDisposable
     {
         //using System.Data;
