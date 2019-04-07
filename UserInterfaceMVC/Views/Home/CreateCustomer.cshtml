@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "CreateCustomer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model EntitiesLayer.Customer
+
+<h2>CreateCustomer</h2>
+
+ 
+<div style="margin-left:5%; margin-right:10%; margin-top:5%" class="col-md-8 col-sm-8 col-lg-8">
+    @using (Html.BeginForm("CreateCustomer", "Home", FormMethod.Post))
+    {
+
+        <!--Window Begin-->
+        <div class="card border-dark ">
+            <div class="card-header bg-info text-white">Yeni Kullanıcı ekle</div>
+            <div class="card-body">
+
+                <!--Form Begin-->
+
+                <form class="needs-validation col-md-12" novalidate>
+                    <div class="form-row">
+                        <div>
+                            <label for="validationTooltip01">@Html.DisplayFor(m => m.FirstName)</label>
+                            @*<input name="Title" type="text" class="form-control" id="validationTooltip01" placeholder="Başlık" value="Mark" required>*@
+                            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control", @placeholder = "Kullanıcı Adı" })
+                            <div class="valid-tooltip">
+                                Looks good!
+                            </div>
+                        </div>
+                         
+
+                        @*<div class="form-group" style="margin-left:2%">
+                            <label for="inputState">Kategori</label>
+                            @Html.DropDownListFor(m => m.RelatedCategory, ViewBag.Categorylist as SelectList, "Kategori seçiniz", new { @class = "form-control" })
+                        </div>*@
+ 
+                    </div>
+
+                    <div class="form-row" style="margin-top:2%">
+                        <label for="validationTooltip04">@Html.DisplayFor(m => m.LastName)</label>
+                        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", @placeholder = "Resim linkini bu alana yazınız" })
+                        <div class="invalid-tooltip">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+                    <div class="form-row" style="margin-top:2%">
+                        <label for="exampleFormControlTextarea1">@Html.DisplayFor(m => m.PhoneNumber)</label>
+                        @Html.TextAreaFor(m => m.PhoneNumber, new { @class = "form-control", @rows = "10", @placeholder = "içerik açıklamasını bu alana yazınız" })
+                        @*<textarea name="Article" class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>*@
+                    </div>
+
+                    <div class="form-row" style="margin-top:2%">
+                        <label for="exampleFormControlTextarea1">@Html.DisplayFor(m => m.Email)</label>
+                        @Html.TextAreaFor(m => m.Email, new { @class = "form-control", @rows = "3", @placeholder = "içerik anasayfada görünen kısa açıklamasını bu alana yazınız" })
+                    </div>
+
+                    <div class="form-row" style="margin-top:2%">
+                        <div class="col-md-12 mb-3">
+                            <label for="validationTooltip03">@Html.DisplayFor(m => m.FullName)</label>
+                            @Html.TextBoxFor(m => m.FullName, new { @class = "form-control", @placeholder = "Video linkini bu alana yazınız" })
+                            <div class="invalid-tooltip">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="margin-left:80%">
+                            <button class="btn btn-info" type="submit">Kaydet</button>
+                        </div>
+
+                    </div>
+
+                </form>
+
+                <!--Form End-->
+            </div>
+        </div>
+        <!--Window End-->
+    }
+</div>
+<br /><br /><br />
+
+
+
+
+
+
+
+
+

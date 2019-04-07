@@ -18,7 +18,7 @@ namespace UserInterfaceMVC.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View(GetCustomer());
+            return View();
         }
 
         public List<Customer> GetCustomer()
@@ -39,5 +39,29 @@ namespace UserInterfaceMVC.Controllers
         {
             var countryResult = MvcDbHelper.Repository.GetAllItems<Country>(QueryWarehouse.Country.GetAll).ToList();
         }
+
+        #region Partial Views
+        public ActionResult _partialCustomerList()
+        {
+            return View(GetCustomer());
+        }
+        #endregion
+
+
+        // First Create
+        #region Views
+        //Get işlemi sayfayı buradan çekicek
+        [HttpGet]
+        public ActionResult CreateCustomer()
+        {
+            return View();
+        }
+        // Post işlemi kaydederken buraya girecek verimiz
+        [HttpPost]
+        public ActionResult CreateCustomer(Customer model)
+        {
+            return View();
+        }
+        #endregion
     }
 }
