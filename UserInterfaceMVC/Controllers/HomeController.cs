@@ -18,13 +18,14 @@ namespace UserInterfaceMVC.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View();
+            return View(GetCustomer());
         }
 
-        public void GetCustomer()
+        public List<Customer> GetCustomer()
         {
             // add =>  using UserInterfaceMVC.Models;
             var customerResult = MvcDbHelper.Repository.GetAllItems<Customer>(QueryWarehouse.Customer.GetAll).ToList();
+            return customerResult;
         } 
         public void GetAccount()
         {
